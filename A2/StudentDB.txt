@@ -1,0 +1,30 @@
+name harry potter
+school hogwarts
+house gryffindor
+blood pure
+birthday 31/07/1979
+*
+name ronald weasley
+school hogwarts
+house griffindor
+blood pure
+borthday 01/03/1980
+*
+name hermione granger
+school hogwarts
+house griffindor
+blood muggle-born
+birthday 19/09/1979
+*
+name draco malfoy
+school hogwarts
+house slytherin
+blood pure
+birthday 05/06/1980
+*
+name luna lovegood
+school hogwarts
+house ravenclaw
+blood pure
+birthday 13/02/1981
+$

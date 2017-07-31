@@ -1,0 +1,31 @@
+name albus dumbledore
+house griffindor
+blood pureblood
+school hogwarts
+unknown
+professor
+*
+name fleur delacour
+house N/A
+blood part-human
+school beauxbatton
+student
+*
+name nymphadora tonks
+house hufflepuff
+blood half-blood
+school hogwarts
+auror
+*
+name pansy parkinson
+house slytherin
+blood pureblood
+school hogwarts
+student
+*
+name cho chang
+house ravenclaw
+blood half-blood
+school hogwarts
+student
+$

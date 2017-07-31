@@ -1,0 +1,30 @@
+name ravenclaw
+school hogwarts
+studentnum 2
+luna lovegood
+cho chang
+*
+name griffindor
+school hogwarts
+studentnum 3
+harry potter
+hemrione granger
+ronald weasley
+*
+name hufflepuff
+school hogwarts
+studentnum 1
+cedric diggory
+*
+name slytherin
+school hogwarts
+studentnum 3
+draco malfoy
+vincent crabbe
+gregory goyle
+*
+name bellefeuille
+school beauxbaton
+studentnum 1
+fleur delacour
+$

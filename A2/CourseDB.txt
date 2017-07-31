@@ -1,0 +1,41 @@
+name poisions
+mingrade O
+professor severus snape
+studentnum 3
+harry potter
+hermione granger
+ronald weasly
+year 1995
+*
+name flying
+mingrade A
+professor madame hooche
+sudentnum 1
+draco malfoy
+year 1996
+*
+name transfiguration
+mingrade B
+professor minerva mcgongall
+studentnum 2
+parvati patil
+justin finch-fletchley
+year 1998
+*
+name charms
+mingrade C
+professor filius flitwick
+studentnum 4
+seamus finnigan
+dean thomas
+ernie mcmillan
+lavender brown
+year 1992
+*
+name herbology
+mingrade B
+professor pomona sprout
+studentnum 1
+neville longbotom
+year 1955
+$
