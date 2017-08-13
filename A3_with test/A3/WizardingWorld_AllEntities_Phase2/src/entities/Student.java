@@ -29,7 +29,7 @@ public class Student extends Person
 			_courses = new Vector<Course>();
 		_courses.add(course);
 	}
-	public boolean removeCoures (Course course)
+	public boolean removeCourse (Course course)
 	{
 		if (_courses == null)
 			return false;
@@ -61,7 +61,7 @@ public class Student extends Person
 	{
 		if (!_courses.contains(course))
 			return false;
-		this.removeCoures(course);
+		this.removeCourse(course);
 		this.addReportCard(new FinishedCourse(course, grade));
 		return true;
 	}
