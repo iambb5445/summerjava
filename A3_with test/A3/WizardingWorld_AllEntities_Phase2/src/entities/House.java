@@ -48,7 +48,7 @@ public class House
 	{
 		_students = students;
 	}
-	public void addStudents (Student student)
+	public void addStudent (Student student)
 	{
 		_students.add(student);
 	}
@@ -74,11 +74,10 @@ public class House
 	{
 		_qualities = qualities;
 	}
-	public void addQualitiy (String quality)
+	public void addQuality (String quality)
 	{
 		_qualities.add(quality);
 	}
-	
 	public boolean removeQuality (String quality)
 	{
 		return _qualities.remove(quality);
@@ -95,5 +94,6 @@ public class House
 	public void addPerfect (Integer year, Student student)
 	{
 		_perfects.put(year, student);
-	} 
+	}
+	// we never remove a perfect
 }

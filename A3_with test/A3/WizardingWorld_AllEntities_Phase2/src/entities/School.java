@@ -20,10 +20,10 @@ public class School
 		_name = name;
 	}*/
 	
-	public School (String name, ArrayList<House> house_names, ArrayList<Course> courses, ArrayList<Integer> years, Vector<Student> students, Vector<Professor> professors, String location)
+	public School (String name, ArrayList<House> houses, ArrayList<Course> courses, ArrayList<Integer> years, Vector<Student> students, Vector<Professor> professors, String location)
 	{
 		_name = name;
-		_houses = house_names;
+		_houses = houses;
 		_courses = courses;
 		_students = students;
 		_professors = professors;
@@ -32,7 +32,10 @@ public class School
 			_housed = true;
 		else
 			_housed = false;
-		_num_of_students = _students.size();
+		if (_students == null)
+			_num_of_students = 0;
+		else
+			_num_of_students = _students.size();
 		_location = location;
 	}
 
