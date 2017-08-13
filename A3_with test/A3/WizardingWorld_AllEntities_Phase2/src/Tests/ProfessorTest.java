@@ -23,7 +23,7 @@ public class ProfessorTest extends PersonTest
 	{
 		snape = new Person ("Severus Snape", null, BloodStatus.Half_blood, null, null);
 		professor = new Professor (snape, null, null);
-		Map<Integer, Course> courses = new HashMap();
+		Map<Integer, Course> courses = new HashMap<Integer, Course>();
 		Course poitions = new Course("Poitions", professor, Grades.O, 1990, null);
 		courses.put(1990, poitions);
 		// test getCourses and setCourses

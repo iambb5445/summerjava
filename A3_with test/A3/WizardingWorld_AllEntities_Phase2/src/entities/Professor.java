@@ -1,6 +1,7 @@
 package entities;
 
 import java.util.Date;
+import java.util.HashMap;
 import java.util.Map;
 
 public class Professor extends Person
@@ -32,6 +33,8 @@ public class Professor extends Person
 	}
 	public void addCourse (Integer year, Course course)
 	{
+		if (_courses == null)
+			_courses = new HashMap<Integer, Course>();
 		_courses.put(year, course);
 	}
 	

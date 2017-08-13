@@ -1,5 +1,6 @@
 package entities;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Vector;
 
@@ -50,10 +51,14 @@ public class House
 	}
 	public void addStudent (Student student)
 	{
+		if (_students == null)
+			_students = new Vector<Student>();
 		_students.add(student);
 	}
 	public boolean removeStudent (Student student)
 	{
+		if (_students == null)
+			return false;
 		return _students.remove(student);
 	}
 	
@@ -76,10 +81,14 @@ public class House
 	}
 	public void addQuality (String quality)
 	{
+		if (_qualities == null)
+			_qualities = new Vector<String>();
 		_qualities.add(quality);
 	}
 	public boolean removeQuality (String quality)
 	{
+		if (_qualities == null)
+			return false;
 		return _qualities.remove(quality);
 	}
 	
@@ -93,6 +102,8 @@ public class House
 	}
 	public void addPerfect (Integer year, Student student)
 	{
+		if (_perfects == null)
+			_perfects = new HashMap<Integer, Student>();
 		_perfects.put(year, student);
 	}
 	// we never remove a perfect

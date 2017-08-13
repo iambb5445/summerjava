@@ -58,6 +58,8 @@ public class School
 	}
 	public void addCourse (Course course)
 	{
+		if (_courses == null)
+			_courses = new ArrayList<Course>();
 		_courses.add(course);
 	}
 	public boolean removeCourse (Course course)
@@ -66,6 +68,8 @@ public class School
 			return false;
 		_courses.remove(course);
 		return true;*/
+		if (_courses == null)
+			return false;
 		return _courses.remove(course);
 	}
 
@@ -84,11 +88,18 @@ public class School
 	public void addHouse(House house)
 	{
 		_housed = true;
+		if (_houses == null)
+			_houses = new ArrayList<House>();
 		_houses.add(house);
 	}
 	public boolean removeHouse (House house)
 	{
-		return _houses.remove(house);
+		if (_houses == null)
+			return false;
+		boolean ret_val = _houses.remove(house);
+		if (_houses == null || _houses.size() == 0)
+			_housed = false;
+		return ret_val;
 	}
 
 	public Vector<Student> getStudents()
@@ -98,15 +109,22 @@ public class School
 	public void setStudents(Vector<Student> students)
 	{
 		_students = students;
-		_num_of_students = _students.size();
+		if (students == null)
+			_num_of_students = 0;
+		else
+			_num_of_students = _students.size();
 	}
 	public void addStudent (Student student)
 	{
+		if (_students == null)
+			_students = new Vector<Student>();
 		_students.add(student);
 		_num_of_students ++;
 	}
 	public boolean removeStudent (Student student)
 	{
+		if (_students == null)
+			return false;
 		return _students.remove(student);
 	}
 
@@ -120,10 +138,14 @@ public class School
 	}
 	public void addProfessor (Professor professor)
 	{
+		if (_professors == null)
+			_professors = new Vector<Professor>();
 		_professors.add(professor);
 	}
 	public boolean removeProfessor (Professor professor)
 	{
+		if (_professors == null)
+			return false;
 		return _professors.remove(professor);
 	}
 
@@ -137,10 +159,14 @@ public class School
 	}
 	public void addYear (Integer year)
 	{
+		if (_years == null)
+			_years = new ArrayList<Integer> ();
 		_years.add(year);
 	}
-	public boolean romoveYear (Integer year)
+	public boolean removeYear (Integer year)
 	{
+		if (_years == null)
+			return false;
 		return _years.remove(year);
 	}
 	

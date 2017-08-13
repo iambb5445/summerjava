@@ -34,10 +34,14 @@ public class Course
 	}
 	public void addStudent (Student student)
 	{
+		if (_students == null)
+			_students = new Vector<Student>();
 		_students.add(student);
 	}
 	public boolean removeStudent (Student student)
 	{
+		if (_students == null)
+			return false;
 		return _students.remove(student);
 	}
 	

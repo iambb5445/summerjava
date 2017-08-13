@@ -25,10 +25,14 @@ public class Student extends Person
 	}
 	public void addCourse (Course course)
 	{
+		if (_courses == null)
+			_courses = new Vector<Course>();
 		_courses.add(course);
 	}
 	public boolean removeCoures (Course course)
 	{
+		if (_courses == null)
+			return false;
 		return _courses.remove(course);
 	}
 	
@@ -42,10 +46,14 @@ public class Student extends Person
 	}
 	public void addReportCard (FinishedCourse finished_course)
 	{
+		if (_report_card == null)
+			_report_card = new Vector<FinishedCourse>();
 		_report_card.add(finished_course);
 	}
 	public boolean removeReportCard (FinishedCourse finished_course)
 	{
+		if (_report_card == null)
+			return false;
 		return _report_card.remove(finished_course);
 	}
 	
