@@ -13,10 +13,10 @@ import entities.Student;
 
 public class CourseTest
 {
-	Course charms;
+	protected Course charms;
 	
 	@Test
-	public void StudentTest ()
+	public void studentTest ()
 	{
 		charms = new Course("charms", null, Grades.O, 1984, null);
 		Vector <Student> students = new Vector<Student>();

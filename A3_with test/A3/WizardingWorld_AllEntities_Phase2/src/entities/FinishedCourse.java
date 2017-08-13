@@ -11,7 +11,7 @@ public class FinishedCourse extends Course
 	{
 		super(course.getName(), course.getProfessor(), course.getMinGrade(), course.getYear(), course.getStudents());
 		_grade = grade;
-		if (_grade.compareTo(grade) != -1)
+		if (_grade.compareTo(course.getMinGrade()) <= 0)
 			_passed = true;
 		else
 			_passed = false;
@@ -20,7 +20,7 @@ public class FinishedCourse extends Course
 	{
 		super(name, professor, min_grade, year, students);
 		_grade = grade;
-		if (_grade.compareTo(_min_grade) != -1)
+		if (_grade.compareTo(_min_grade) <= 0)
 			_passed = true;
 		else
 			_passed = false;
@@ -37,5 +37,10 @@ public class FinishedCourse extends Course
 			_passed = true;
 		else
 			_passed = false;
+	}
+	
+	public boolean getPassed ()
+	{
+		return _passed;
 	}
 }
