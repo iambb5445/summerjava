@@ -8,6 +8,13 @@ public class Professor extends Person
 	private Map<Integer, Course> _courses;
 	private String _notes;
 	
+	public Professor(Person person, Map<Integer, Course> courses, String notes)
+	{
+		super (person.getName(), person.getHouse(), person.getBloodStatus(), person.getSchool(), person.getBirthday());
+		_courses = courses;
+		_notes = notes;
+	}
+	
 	public Professor(String name, House house, BloodStatus blood_status, School school, Date birthday, Map<Integer, Course> courses, String notes)
 	{
 		super(name, house, blood_status, school, birthday);

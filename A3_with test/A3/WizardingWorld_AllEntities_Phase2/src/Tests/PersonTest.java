@@ -13,7 +13,7 @@ import entities.School;
 
 public class PersonTest
 {
-	Person person;
+	protected Person person;
 	
 	@Test
 	public void nameTest ()
