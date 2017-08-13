@@ -9,8 +9,6 @@ import java.util.Vector;
 import org.junit.Assert;
 
 import entities.BloodStatus;
-import entities.Course;
-import entities.Grades;
 import entities.House;
 import entities.Professor;
 import entities.School;
