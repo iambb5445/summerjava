@@ -8,11 +8,13 @@ import org.junit.Test;
 import entities.BloodStatus;
 import entities.Course;
 import entities.Grades;
+import entities.Professor;
 import entities.Student;
 
 public class CourseTest
 {
 	Course charms;
+	
 	@Test
 	public void StudentTest ()
 	{
@@ -33,5 +35,48 @@ public class CourseTest
 		students.remove(malfoy);
 		charms.removeStudent(malfoy);
 		Assert.assertArrayEquals(students.toArray(), charms.getStudents().toArray());
+	}
+	
+	@Test
+	public void professorTest ()
+	{
+		charms = new Course("charms", null, Grades.O, 1984, null);
+		Professor snape = new Professor ("Severus Snape", null, BloodStatus.Half_blood, null, null, null, null);
+		// test setProfessor and getProfessor
+		charms.setProfessor(snape);
+		Assert.assertEquals(snape, charms.getProfessor());
+	}
+	
+	@Test
+	public void nameTest ()
+	{
+		charms = new Course("charms", null, Grades.O, 1984, null);
+		// test getName
+		Assert.assertEquals("charms", charms.getName());
+		// test setName and getName
+		charms.setName("poisions");
+		Assert.assertEquals(charms.getName(), "poisions");
+	}
+	
+	@Test
+	public void minGradeTest ()
+	{
+		charms = new Course("charms", null, Grades.O, 1984, null);
+		// test getMinGrade
+		Assert.assertEquals(charms.getMinGrade(), Grades.O);
+		// test getMinGrade and setMinGrade
+		charms.setMinGrade(Grades.A);
+		Assert.assertEquals(charms.getMinGrade(), Grades.A);
+	}
+	
+	@Test
+	public void yearTest ()
+	{
+		charms = new Course("charms", null, Grades.O, 1984, null);
+		// test getYear
+		Assert.assertEquals(charms.getYear(), 1984);
+		// test setYear and getYear
+		charms.setYear(1990);
+		Assert.assertEquals(charms.getYear(), 1990);
 	}
 }
